@@ -55,7 +55,13 @@ platforms:
             prod-exemple-front-02:
                 host: prod-2.exemple.com
                 user: automate
-                password: %prod_password%
+                ssh_key: /path/to/key
+                path: /home/wwwroot/
+             prod-exemple-front-03:
+                host: prod-3.exemple.com
+                user: automate
+                ssh_key: /path/to/key
+                password: my_passphrase
                 path: /home/wwwroot/
 shared_files:
     - app/config/parameters.yml
@@ -86,6 +92,11 @@ Address of your git repository. If you use a repository in https you can use a v
 repository: https://user:%git_password%@exemple.com
 ```
 
+### authentication
+
+It's possible to authenticate on the server with a password or with a private key. For the latter, you must define a path to the private key file and an optional passphrase (password) as the example above describes.
+
+
 ### platforms
 
 List of platforms.
@@ -107,9 +118,11 @@ platforms:
             prod-exemple-front-02:
                 host: prod-2.exemple.com
                 user: automate
-                password: %prod_password%
+                ssh_key: /keys/private     # A file path to private key
+                password: automate         # An optional passphrase
                 path: /home/wwwroot/
 ```
+
 
 **The SSH password** 
 
