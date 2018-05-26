@@ -293,6 +293,7 @@ With Automate you have the possibility to clear automatically the `opcache` or `
 ```YAML
 plugins:
     cache_tool:
+        version: 3.2.1 #Optional: Check the right version you need here : https://github.com/gordalina/cachetool/releases 
         opcache: true
         apcu: false
         apc: false
