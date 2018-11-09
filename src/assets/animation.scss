@@ -1,0 +1,98 @@
+@media screen and (min-width: 768px) {
+  .home:not(.viewScrolled) {
+    .upper_home {
+      .left h2, .upper_home .left p, .upper_home .line a i {
+        color: #2b3d50;
+      }
+      .line a {
+        color: #2b3d50;
+        border-color: #2b3d50;
+      }
+      .left .logo span {
+        opacity: 0;
+      }
+      .info:not(.info2) {
+        display: block;
+      }
+      .info2 {
+        display: none;
+      }
+    }
+  }
+
+  .home.viewScrolled {
+    .upper_home {
+      .left h2, .left p, .line a i {
+        color: #fff !important;
+      }
+      .line a {
+        color: #fff;
+        border-color: #fff;
+      }
+      .ghost {
+        background-color: #2b3d50;
+      }
+      .left .logo span {
+        opacity: 1;
+      }
+      .info:not(.info2) {
+        display: none;
+      }
+      .info2 {
+        display: block!important;
+      }
+    }
+  }
+}
+
+/* entire container, keeps perspective */
+.flip-container {
+  perspective: 2000px;
+}
+/* flip the pane when hovered */
+.viewScrolled .flip-container .flipper, .viewScrolled .flip-container .flipper {
+  transform: rotateX(180deg);
+}
+
+.flip-container, .front, .back {
+  width: 100%;
+  height: 100vh;
+}
+
+/* flip speed goes here */
+.flipper {
+  transition: 0.9s;
+  transform-style: preserve-3d;
+
+  position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+  backface-visibility: hidden;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+  z-index: 2;
+  /* for firefox 31 */
+  transform: rotateX(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+  transform: rotateX(180deg);
+}
+
+.site-footer .inner {
+  margin-top: 170px;
+  transition-duration: 0.6s;
+}
+
+.site-footer.inBottom .inner {
+  margin-top: 0;
+}
