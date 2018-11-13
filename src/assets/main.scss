@@ -274,16 +274,25 @@ body {
     }
   }
   .container_advantages {
+    padding-top: 145px;
+    clear: both;
+    display: block;
+    width: 100%;
+    text-align: center;
+
     .btn_git {
       display: block;
       margin: 60px auto;
     }
+
+    h2 {
+      font-size: 180%;
+      font-family: "Work Sans";
+      color: $blue;
+      margin-bottom: 57px;
+    }
+
     .advantages {
-      padding-top: 145px;
-      clear: both;
-      display: block;
-      width: 100%;
-      text-align: center;
       @include clearfix;
       box-sizing: border-box;
       padding-left: 9.25%;
@@ -305,7 +314,7 @@ body {
           max-width: 820px;
           padding: 0;
         }
-        h2 {
+        h3 {
           display: block;
           font-weight: 600;
           font-family: "Work Sans";

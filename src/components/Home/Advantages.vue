@@ -1,32 +1,33 @@
 <template>
   <div class="container_advantages section section3">
+    <h2>Discover the advantages of Automate</h2>
     <div class="advantages">
       <div class="item">
-        <h2>Consistency</h2>
+        <h3>Consistency</h3>
         <p>This is the end of much inconsistency between your platforms, everything is deploying in parallel. If one failed, all others are stopped immediately.</p>
       </div>
       <div class="item">
-        <h2>Atomic deploys</h2>
+        <h3>Atomic deploys</h3>
         <p>Your application is integrally built, then deployed instantly with symlinks.</p>
       </div>
       <div class="item">
-        <h2>Zero downtime</h2>
+        <h3>Zero downtime</h3>
         <p>As long as the new deployment is not succesful, the last one stays online until the last moment.</p>
       </div>
       <div class="item">
-        <h2>Deploy to multiples servers</h2>
+        <h3>Deploy to multiples servers</h3>
         <p>Configure all your remotes servers: development, pre-production and production one in the same place. Automate take care of the rest!</p>
       </div>
       <div class="item">
-        <h2>Deploy any project</h2>
+        <h3>Deploy any project</h3>
         <p>Automate can work with any type of project! PHP, JS, Ruby,.. It’s a polyvalent Automate ! ;) </p>
       </div>
       <div class="item">
-        <h2>Travis / Gitlab-ci</h2>
+        <h3>Travis / Gitlab-ci</h3>
         <p>You can use Automate from your workstation or through an integration server like Travis or Gitlab-ci.</p>
       </div>
       <div class="item">
-        <h2>Best practice</h2>
+        <h3>Best practice</h3>
         <p>Automate has very clean and well tested code. <br> The repository is watched by many code quality tools, and every pull request is also checked by QA tools.</p>
         <div class="line">
           <a href="https://travis-ci.org/automatephp/automate">

@@ -8,18 +8,21 @@ const docPages = [
     name: 'docStarted',
     md: require('../../static/doc/get-started.md'),
     title: 'Get started',
+    description: 'Documentation to configure Automate.',
   },
   {
     path: '/docs/deployment',
     name: 'docDeploy',
     md: require('../../static/doc/deployment.md'),
     title: 'Launching a deployment',
+    description: 'All the elements to launch a deployment with Automate.',
   },
   {
     path: '/docs/plugins',
     name: 'docPlugins',
     md: require('../../static/doc/plugins.md'),
     title: 'Plugins',
+    description: 'A list of plugins to use with Automate.',
   },
 ];
 
@@ -44,6 +47,7 @@ docPages.forEach((d) => {
     component: Doc,
     props: {
       title: d.title,
+      description: d.description,
       md: d.md,
       menu,
     },
