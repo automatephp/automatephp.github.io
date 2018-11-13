@@ -44,10 +44,17 @@
       }
     },
     mounted() {
-      window.addEventListener('scroll', () =>  {
+      this.handlerScroll();
+      window.addEventListener('scroll', this.handlerScroll);
+    },
+    beforeDestroy() {
+      window.removeEventListener('scroll', this.handlerScroll);
+    },
+    methods: {
+      handlerScroll() {
         const heightWindow = isNaN(window.innerHeight) ? window.clientHeight : window.innerHeight;
-        this.inBottom = ((document.body.offsetHeight - 170) <= (heightWindow + document.documentElement.scrollTop));
-      });
+        this.inBottom = (document.body.offsetHeight - 170) <= (heightWindow + document.documentElement.scrollTop);
+      },
     },
   }
 </script>

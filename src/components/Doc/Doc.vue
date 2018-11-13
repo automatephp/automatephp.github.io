@@ -54,10 +54,14 @@
       md: {type: String, required: true},
       menu: {type: Array, required: true},
       title: {type: String, required: true},
+      description: {type: String, required: true},
     },
     metaInfo() {
       return {
-        title: 'Doc - ' + this.title,
+        title: this.title + ' - Automate Documentation',
+        meta: [
+          { name: 'description', content: this.description},
+        ],
       }
     },
   }

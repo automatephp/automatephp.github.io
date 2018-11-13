@@ -95,10 +95,13 @@
         this.viewScrolled = true;
       },
     },
-    metaInfo: {
-      title: 'Automate',
-      // all titles will be injected into this template
-      titleTemplate: 'Automate',
+    metaInfo() {
+      return {
+        title: 'Automate, a PHP deployment tool',
+        meta: [
+          { name: 'description', content: 'Discover Automate, a PHP solution created in partnership with Eolas to automate deployment of your developments on remote Linux servers.'},
+        ],
+      }
     },
   }
 </script>
