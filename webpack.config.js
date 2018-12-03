@@ -44,7 +44,8 @@ Encore
     'static/demo.cast',
     'src/assets/favicon.ico',
     'src/404.html',
-    'static/installer.php'
+    'static/installer.php',
+    'static/googleae5075fd86941943.html'
   ]))
   .addPlugin(new Dotenv({path: '.env'}))
 ;
