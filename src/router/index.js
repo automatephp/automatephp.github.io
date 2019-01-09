@@ -4,21 +4,21 @@ import Doc from '../components/Doc/Doc'
 
 const docPages = [
   {
-    path: '/docs',
+    path: '/doc',
     name: 'docStarted',
     md: require('../../static/doc/get-started.md'),
     title: 'Get started',
     description: 'Documentation to configure Automate.',
   },
   {
-    path: '/docs/deployment',
+    path: '/doc/deployment',
     name: 'docDeploy',
     md: require('../../static/doc/deployment.md'),
     title: 'Launching a deployment',
     description: 'All the elements to launch a deployment with Automate.',
   },
   {
-    path: '/docs/plugins',
+    path: '/doc/plugins',
     name: 'docPlugins',
     md: require('../../static/doc/plugins.md'),
     title: 'Plugins',

@@ -8,9 +8,9 @@ Dotenv = require('dotenv-webpack')
 SitemapWebpackPlugin = require('sitemap-webpack-plugin').default;
 
 const routes = [
-  '/docs',
-  '/docs/deployment',
-  '/docs/plugins',
+  '/doc',
+  '/doc/deployment',
+  '/doc/plugins',
   '/'
 ];
 
