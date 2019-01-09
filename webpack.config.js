@@ -5,6 +5,7 @@ CopyWebpackPlugin = require('copy-webpack-plugin')
 UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 RobotstxtPlugin = require('robotstxt-webpack-plugin').default
 Dotenv = require('dotenv-webpack')
+SitemapWebpackPlugin = require('sitemap-webpack-plugin').default;
 
 const routes = [
   '/docs',
@@ -48,6 +49,14 @@ Encore
     'static/googleae5075fd86941943.html'
   ]))
   .addPlugin(new Dotenv({path: '.env'}))
+  .addPlugin(new SitemapWebpackPlugin('https://automatephp.github.io', routes))
+  .addPlugin(new RobotstxtPlugin({
+      policy: [{
+          userAgent: '*',
+          allow: '/',
+      }],
+      sitemap: 'https://automatephp.github.io/sitemap.xml',
+  }))
 ;
 
 routes.forEach((r) => {
