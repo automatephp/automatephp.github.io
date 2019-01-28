@@ -1,1 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://automatephp.github.io/doc</loc></url><url><loc>https://automatephp.github.io/doc/deployment</loc></url><url><loc>https://automatephp.github.io/doc/plugins</loc></url><url><loc>https://automatephp.github.io/</loc></url></urlset>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://automatephp.github.io</loc>
+    </url>
+    <url>
+        <loc>https://automatephp.github.io/doc/</loc>
+    </url>
+    <url>
+        <loc>https://automatephp.github.io/doc/deployment/</loc>
+    </url>
+    <url>
+        <loc>https://automatephp.github.io/doc/plugins/</loc>
+    </url>
+</urlset>
