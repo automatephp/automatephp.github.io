@@ -24,7 +24,10 @@
       </div>
       <div class="item">
         <h3>Travis / Gitlab-ci</h3>
-        <p>You can use Automate from your workstation or through an integration server like Travis or Gitlab-ci.</p>
+        <p>
+          You can use Automate from your workstation or through an integration server like Travis or Gitlab-ci.
+          <a href="https://test-seo-5.firebaseapp.com/" style="color: white;">Un test SEO!</a>
+        </p>
       </div>
       <div class="item">
         <h3>Best practice</h3>
