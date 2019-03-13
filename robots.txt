@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://automatephp.github.io/sitemap.xml
